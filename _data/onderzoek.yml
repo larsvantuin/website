@@ -1,23 +1,31 @@
-# Onderzoekslijnen. Beschrijf het thema, geen status die snel veroudert.
+# Onderzoekslijnen (titel_en/tekst_en = Engelse pagina). Beschrijf het thema, geen status die snel veroudert.
 - titel: "Wat werk gezond houdt"
   tekst: >-
     Met praktijkdata van tienduizenden werknemers onderzoek ik welke kenmerken van werk
     bevlogenheid voeden en burn-out voorkomen. Wat energie geeft, zoals ontwikkeling,
     waardering en betekenisvol werk, blijkt ook te beschermen. Theoretisch kader:
     het Job Demands-Resources-model.
+  titel_en: "What keeps work healthy"
+  tekst_en: "Using occupational health data from tens of thousands of employees, I study which job characteristics fuel work engagement and prevent burnout. What gives energy, such as development, appreciation and meaningful work, turns out to protect as well. Theoretical framework: the Job Demands-Resources model."
 
 - titel: "Betekenisvol werk in een hybride wereld"
   tekst: >-
     Thuiswerken verandert wat ons motiveert. Ik onderzoek hoe het gewicht van betekenisvol
     werk voor bevlogenheid en vertrekintentie verschuift naarmate mensen meer thuiswerken,
     en wat dat vraagt van leidinggevenden.
+  titel_en: "Meaningful work in a hybrid world"
+  tekst_en: "Working from home changes what motivates us. I study how the weight of meaningful work for engagement and turnover intention shifts as people work more from home, and what that asks of leaders."
 
 - titel: "Psychisch verzuim voorkomen"
   tekst: >-
     Grootschalig onderzoek naar de factoren die verzuim door psychische klachten voorspellen,
     zodat organisaties eerder en gerichter kunnen bijsturen.
+  titel_en: "Preventing sickness absence due to mental health complaints"
+  tekst_en: "Large-scale research into the factors that predict sickness absence due to mental health complaints, so that organizations can act earlier and more effectively."
 
 - titel: "Leiderschap, motivatie en betekenisgeving"
   tekst: >-
     Het fundament van mijn werk: hoe leidinggevenden autonomie, competentie en verbondenheid
     ondersteunen, en welke rol waarden en een gedeeld doel daarbij spelen.
+  titel_en: "Leadership, motivation and meaning"
+  tekst_en: "The foundation of my work: how leaders support autonomy, competence and relatedness, and the role that values and a shared purpose play in this."

@@ -2,38 +2,103 @@
 layout: default
 lang: en
 title: "In English"
-description: "Research on work engagement, burnout, well-being, motivation and meaningful work."
+description: "Research, lectures and talks on leadership, motivation, work engagement, burnout and meaningful work."
 ---
 {% assign p = site.data.profiel %}
 
 <section class="hero">
-  <div class="wrap narrow">
-    <h1>The psychology of leadership, motivation and meaningful work</h1>
-    <p class="lead">I am an Associate Professor at Nyenrode Business University and affiliated with the Knowledge Institute of Work and Health at Arbo Unie, the Netherlands. I received my PhD in psychology from Utrecht University (2021) on leadership, purpose, values and motivation at work. Before returning to academia I worked in telecommunications and business development and as an international executive coach.</p>
+  <div class="wrap hero-grid">
+    <div>
+      <h1>The psychology of leadership, motivation and meaningful work</h1>
+      <p class="lead">What makes work enjoyable and meaningful? And how can organizations shape it?</p>
+      <p class="buttons">
+        <a class="btn" href="#research">See my research</a>
+        <a class="btn btn-ghost" href="#talks">Book a talk</a>
+      </p>
+    </div>
+    <figure class="portret">
+      <img src="{{ '/assets/img/' | append: p.fotos.portret | relative_url }}" alt="Portrait of Lars van Tuin" width="480" height="600">
+      <figcaption>Photo Martina Ketelaar</figcaption>
+    </figure>
   </div>
 </section>
 
 <section id="research" class="section">
-  <div class="wrap narrow">
+  <div class="wrap">
     <h2>Research</h2>
-    <p>Using large-scale occupational health data, I study which job characteristics foster work engagement and protect against burnout, within the Job Demands-Resources framework. Current projects examine how hybrid work shifts the weight of meaningful work for engagement and turnover intention, and which factors predict sickness absence due to mental health complaints. Underlying this work is a long-standing interest in leadership, basic psychological needs, values and organizational purpose.</p>
+    <div class="cards">
+      {% for o in site.data.onderzoek %}
+      <article class="card">
+        <h3>{{ o.titel_en }}</h3>
+        <p>{{ o.tekst_en }}</p>
+      </article>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
 <section id="publications" class="section alt">
-  <div class="wrap narrow">
-    <h2>Selected publications</h2>
+  <div class="wrap">
+    <h2>Publications</h2>
+    <h3>Scientific work</h3>
     <ul class="pubs">
       {% for item in site.data.wetenschappelijk %}{% include pub.html item=item lang='en' %}{% endfor %}
     </ul>
-    <p class="meer">Full list: <a href="{{ p.links.orcid }}">ORCID</a> · <a href="{{ p.links.scholar }}">Google Scholar</a></p>
+    <p class="meer">Full list and citations: <a href="{{ p.links.orcid }}">ORCID</a> · <a href="{{ p.links.scholar }}">Google Scholar</a></p>
+
+    <h3 style="margin-top:2.5rem">Essays in English</h3>
+    <ul class="pubs">
+      {% for post in site.posts %}{% if post.taal == 'en' %}
+      <li class="pub"><span class="pub-jaar">{{ post.date | date: "%Y" }}</span><div><a class="pub-titel" href="{{ post.url | relative_url }}">{{ post.title }}</a></div></li>
+      {% endif %}{% endfor %}
+    </ul>
+    <p class="meer">More writing, mostly in Dutch: <a href="{{ '/blogs/' | relative_url }}">blog</a></p>
+  </div>
+</section>
+
+<section id="talks" class="section">
+  <div class="wrap">
+    <h2>Lectures and talks</h2>
+    <p class="lead">{{ site.data.lezingen.publiek_en }}</p>
+    <div class="cards">
+      {% for l in site.data.lezingen.onderwerpen %}
+      <article class="card">
+        <h3>{{ l.titel_en }}</h3>
+        <p>{{ l.tekst_en }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="fotos">
+      <figure><img src="{{ '/assets/img/' | append: p.fotos.lezing | relative_url }}" alt="Lars van Tuin speaking to a group in a church hall" loading="lazy"><figcaption>Talk</figcaption></figure>
+      <figure><img src="{{ '/assets/img/' | append: p.fotos.collegezaal | relative_url }}" alt="Lecture hall at Nyenrode with a slide on leadership and motivation" loading="lazy"><figcaption>Lecture hall at Nyenrode</figcaption></figure>
+    </div>
+    <p class="buttons">
+      <a class="btn" href="#contact">Get in touch</a>
+    </p>
+  </div>
+</section>
+
+<section id="about" class="section alt">
+  <div class="wrap narrow">
+    <h2>About</h2>
+    <p>I am an Associate Professor at Nyenrode Business University and affiliated with the Knowledge Institute of Work and Health at Arbo Unie, the Netherlands. At Nyenrode I teach and study leadership, motivation and meaning. At Arbo Unie I use occupational health data to study how working conditions, work engagement and well-being are related.</p>
+    <p>My path to academia ran through practice. After studying political science I worked in the semi-public sector and in telecommunications, most recently as business development manager for international internet strategy and mergers and acquisitions. I then became an executive coach. I worked with leaders in industries including automotive, financial services, energy, telecom, pharma and retail, was a mentor and program coach with Newfield Network in Asia, Europe, South Africa and the US, and a coach and guest lecturer in the Global Leadership Program of International Christian University in Tokyo.</p>
+    <p>The questions I met in practice brought me back to research: why do people flourish in one job and burn out in another? I received my PhD in psychology on this topic from Utrecht University in 2021.</p>
+    <dl class="cv">
+      <dt>2021</dt><dd>PhD in psychology, Utrecht University</dd>
+      <dt>2008</dt><dd>Professional Certified Coach (ICF) and Newfield Certified Ontological Coach</dd>
+      <dt>2001</dt><dd>Postgraduate program, IMD Lausanne</dd>
+      <dt>1998</dt><dd>Postgraduate program, Ashridge (UK)</dd>
+      <dt>1992</dt><dd>Political Science (cum laude), University of Amsterdam</dd>
+    </dl>
+    <p><a href="{{ p.links.nyenrode }}">Profile at Nyenrode</a> · <a href="{{ p.links.kennisinstituut }}">Knowledge Institute of Work and Health</a></p>
   </div>
 </section>
 
 <section id="contact" class="section">
   <div class="wrap narrow">
     <h2>Contact</h2>
-    <p>For research collaboration, lectures or talks.</p>
+    <p>For lectures, talks or research collaboration.</p>
     <p class="buttons">
       {% if p.email and p.email != "" %}<a class="btn" href="mailto:{{ p.email }}">{{ p.email }}</a>{% endif %}
       <a class="btn {% if p.email and p.email != '' %}btn-ghost{% endif %}" href="{{ p.links.linkedin }}">LinkedIn</a>
