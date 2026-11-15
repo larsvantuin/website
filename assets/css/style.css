@@ -40,6 +40,7 @@ nav .lang { border: 1px solid var(--line); border-radius: 4px; padding: 0 .4rem;
 .portret img { border-radius: 6px; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; width: 100%; background: var(--alt); }
 figure { margin: 0; }
 figcaption { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
+.portret figcaption { text-align: right; }
 
 .buttons { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
 .btn { display: inline-block; padding: .65rem 1.2rem; border-radius: 4px; background: var(--accent); color: var(--accent-ink); text-decoration: none; font-weight: 500; border: 1px solid var(--accent); }
@@ -85,3 +86,7 @@ figcaption { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
 .post th, .post td { text-align: left; padding: .4rem .6rem; border-bottom: 1px solid var(--line); }
 .post iframe { border: 0; border-radius: 8px; max-width: 100%; }
 .post .meer { margin-top: 3rem; }
+
+.cv { display: grid; grid-template-columns: 4rem 1fr; gap: .35rem 1rem; margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.cv dt { font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cv dd { margin: 0; }

@@ -1,6 +1,6 @@
 # Instellingen van de site. Na een wijziging hier bouwt GitHub de site opnieuw (1-2 minuten).
 title: "Dr. Lars van Tuin"
-tagline: "Gezond, bevlogen en betekenisvol werk"
+tagline: "Leiderschap, motivatie en betekenisvol werk"
 description: "Onderzoek, colleges en lezingen over bevlogenheid, welzijn, motivatie en betekenisvol werk."
 lang: nl
 url: "https://larsvantuin.github.io"   # later: "https://www.larsvantuin.nl"
@@ -15,3 +15,8 @@ permalink: /:year/:month/:day/:title/
 defaults:
   - scope: { path: "", type: posts }
     values: { layout: post }
+  - scope: { path: "oud" }
+    values: { sitemap: false }
+
+plugins:
+  - jekyll-sitemap

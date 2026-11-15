@@ -8,7 +8,34 @@
   <meta property="og:title" content="{{ site.title }}: {{ site.tagline }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ '/assets/img/' | append: site.data.profiel.fotos.portret | relative_url }}">
+  <meta property="og:image" content="{{ site.url }}{{ '/assets/img/deelafbeelding.jpg' | relative_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | relative_url }}">
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  {% assign p = site.data.profiel %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lars van Tuin",
+    "honorificPrefix": "Dr.",
+    "jobTitle": "Universitair hoofddocent",
+    "url": "{{ site.url }}{{ '/' | relative_url }}",
+    "image": "{{ site.url }}{{ '/assets/img/portret.webp' | relative_url }}",
+    "affiliation": [
+      {"@type": "CollegeOrUniversity", "name": "Nyenrode Business Universiteit"},
+      {"@type": "Organization", "name": "Arbo Unie, Kennisinstituut Werk en Gezondheid"}
+    ],
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Universiteit Utrecht"},
+      {"@type": "CollegeOrUniversity", "name": "Universiteit van Amsterdam"}
+    ],
+    "knowsAbout": ["bevlogenheid", "burn-out", "motivatie", "leiderschap", "betekenisvol werk", "Job Demands-Resources"],
+    "sameAs": ["{{ p.links.orcid }}", "{{ p.links.scholar }}", "{{ p.links.linkedin }}", "{{ p.links.nyenrode }}"]
+  }
+  </script>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
