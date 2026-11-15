@@ -1,0 +1,43 @@
+---
+layout: default
+lang: en
+title: "In English"
+description: "Research on work engagement, burnout, well-being, motivation and meaningful work."
+---
+{% assign p = site.data.profiel %}
+
+<section class="hero">
+  <div class="wrap narrow">
+    <p class="eyebrow">{{ p.naam }}</p>
+    <h1>The psychology of healthy, engaged and meaningful work</h1>
+    <p class="lead">I am an Associate Professor at Nyenrode Business University and affiliated with the Knowledge Institute of Work and Health at Arbo Unie, the Netherlands. I received my PhD in psychology from Utrecht University on motivation at work.</p>
+  </div>
+</section>
+
+<section id="research" class="section">
+  <div class="wrap narrow">
+    <h2>Research</h2>
+    <p>Using large-scale occupational health data, I study which job characteristics foster work engagement and protect against burnout, within the Job Demands-Resources framework. Current projects examine how hybrid work shifts the weight of meaningful work for engagement and turnover intention, and which factors predict sickness absence due to mental health complaints. Underlying this work is a long-standing interest in leadership, basic psychological needs, values and organizational purpose.</p>
+  </div>
+</section>
+
+<section id="publications" class="section alt">
+  <div class="wrap narrow">
+    <h2>Selected publications</h2>
+    <ul class="pubs">
+      {% for item in site.data.wetenschappelijk %}{% include pub.html item=item lang='en' %}{% endfor %}
+    </ul>
+    <p class="meer">Full list: <a href="{{ p.links.orcid }}">ORCID</a> · <a href="{{ p.links.scholar }}">Google Scholar</a></p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap narrow">
+    <h2>Contact</h2>
+    <p>For research collaboration, lectures or talks.</p>
+    <p class="buttons">
+      {% if p.email and p.email != "" %}<a class="btn" href="mailto:{{ p.email }}">{{ p.email }}</a>{% endif %}
+      <a class="btn {% if p.email and p.email != '' %}btn-ghost{% endif %}" href="{{ p.links.linkedin }}">LinkedIn</a>
+    </p>
+  </div>
+</section>

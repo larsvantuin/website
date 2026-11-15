@@ -1,0 +1,9 @@
+{% assign link = include.item.link %}{% assign eerste = link | slice: 0 %}{% if eerste == "/" %}{% assign link = include.item.link | relative_url %}{% endif %}
+<li class="pub">
+  <span class="pub-jaar">{{ include.item.jaar }}</span>
+  <div>
+    <a class="pub-titel" href="{{ link }}">{{ include.item.titel }}</a>
+    {% if include.item.bron and include.item.bron != "" %}<span class="pub-bron">{% if include.item.soort %}{{ include.item.soort }} · {% endif %}{{ include.item.bron }}</span>{% elsif include.item.soort %}<span class="pub-bron">{{ include.item.soort }}</span>{% endif %}
+    {% if include.item.met %}<span class="pub-met">{% if include.lang == 'en' %}With{% else %}Met{% endif %} {{ include.item.met }}</span>{% endif %}
+  </div>
+</li>

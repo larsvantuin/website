@@ -1,0 +1,113 @@
+---
+layout: default
+---
+{% assign p = site.data.profiel %}
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">{{ p.naam }}</p>
+      <h1>De psychologie van gezond, bevlogen en betekenisvol werk</h1>
+      <p class="lead">Wat houdt mensen gezond en bevlogen in hun werk? En hoe geven leidinggevenden en organisaties daar vorm aan? Ik onderzoek het met praktijkdata en vertaal het naar colleges en lezingen.</p>
+      <p class="buttons">
+        <a class="btn" href="#onderzoek">Bekijk mijn onderzoek</a>
+        <a class="btn btn-ghost" href="#lezingen">Lezingen boeken</a>
+      </p>
+    </div>
+    <figure class="portret">
+      <img src="{{ '/assets/img/' | append: p.fotos.portret | relative_url }}" alt="Portret van Lars van Tuin" width="480" height="600">
+      <figcaption>{{ p.fotos.portret_credit }}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="onderzoek" class="section">
+  <div class="wrap">
+    <h2>Onderzoek</h2>
+    <div class="cards">
+      {% for o in site.data.onderzoek %}
+      <article class="card">
+        <h3>{{ o.titel }}</h3>
+        <p>{{ o.tekst }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="publicaties" class="section alt">
+  <div class="wrap">
+    <h2>Publicaties</h2>
+    <p class="subnav">
+      <a href="#wetenschappelijk">Wetenschappelijk</a> ·
+      <a href="#publiek">Publieksstukken</a> ·
+      <a href="#media">In de media</a>
+    </p>
+
+    <h3 id="wetenschappelijk">Wetenschappelijk werk</h3>
+    <ul class="pubs">
+      {% for item in site.data.wetenschappelijk %}{% include pub.html item=item %}{% endfor %}
+    </ul>
+    <p class="meer">Volledig overzicht en citaties: <a href="{{ p.links.orcid }}">ORCID</a> · <a href="{{ p.links.scholar }}">Google Scholar</a></p>
+
+    <h3 id="publiek">Publieksstukken en whitepapers</h3>
+    <ul class="pubs">
+      {% for item in site.data.publieksstukken %}{% if item.jaar >= 2020 %}{% include pub.html item=item %}{% endif %}{% endfor %}
+    </ul>
+    <details class="eerder">
+      <summary>Eerder werk (vóór 2020)</summary>
+      <ul class="pubs">
+        {% for item in site.data.publieksstukken %}{% if item.jaar < 2020 %}{% include pub.html item=item %}{% endif %}{% endfor %}
+      </ul>
+    </details>
+    <p class="meer"><a href="{{ '/blogs/' | relative_url }}">Alle blogs →</a></p>
+
+    <h3 id="media">In de media</h3>
+    <ul class="pubs">
+      {% for item in site.data.media %}{% include pub.html item=item %}{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section id="lezingen" class="section">
+  <div class="wrap">
+    <h2>Colleges en lezingen</h2>
+    <p class="lead">{{ site.data.lezingen.publiek }}</p>
+    <div class="cards">
+      {% for l in site.data.lezingen.onderwerpen %}
+      <article class="card">
+        <h3>{{ l.titel }}</h3>
+        <p>{{ l.tekst }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="fotos">
+      <figure><img src="{{ '/assets/img/' | append: p.fotos.lezing | relative_url }}" alt="Lars van Tuin spreekt voor een groep in een kerkzaal" loading="lazy"><figcaption>Lezing</figcaption></figure>
+      <figure><img src="{{ '/assets/img/' | append: p.fotos.collegezaal | relative_url }}" alt="Collegezaal van Nyenrode met een dia over leiderschap en motivatie" loading="lazy"><figcaption>Collegezaal bij Nyenrode</figcaption></figure>
+    </div>
+    <p class="buttons">
+      <a class="btn" href="#contact">Neem contact op</a>
+      <a class="btn btn-ghost" href="{{ p.links.arbo_academy }}">Sprekersprofiel Arbo Academy</a>
+    </p>
+  </div>
+</section>
+
+<section id="over" class="section alt">
+  <div class="wrap narrow">
+    <h2>Over mij</h2>
+    <p>Ik ben universitair hoofddocent aan Nyenrode Business Universiteit en verbonden aan het Kennisinstituut Werk en Gezondheid van Arbo Unie. Ik promoveerde in de psychologie aan de Universiteit Utrecht op motivatie op het werk.</p>
+    <p>Bij Nyenrode doceer en onderzoek ik leiderschap, motivatie en betekenisgeving. Bij Arbo Unie onderzoek ik met praktijkdata hoe werkomstandigheden, bevlogenheid en welzijn samenhangen.</p>
+    <p><a href="{{ p.links.nyenrode }}">Profiel bij Nyenrode</a> · <a href="{{ p.links.kennisinstituut }}">Kennisinstituut Werk en Gezondheid</a></p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap narrow">
+    <h2>Contact</h2>
+    <p>Voor een college, lezing of onderzoekssamenwerking.</p>
+    <p class="buttons">
+      {% if p.email and p.email != "" %}<a class="btn" href="mailto:{{ p.email }}">{{ p.email }}</a>{% endif %}
+      <a class="btn {% if p.email and p.email != '' %}btn-ghost{% endif %}" href="{{ p.links.linkedin }}">LinkedIn</a>
+    </p>
+  </div>
+</section>

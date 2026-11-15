@@ -1,0 +1,17 @@
+# Instellingen van de site. Na een wijziging hier bouwt GitHub de site opnieuw (1-2 minuten).
+title: "Dr. Lars van Tuin"
+tagline: "Gezond, bevlogen en betekenisvol werk"
+description: "Onderzoek, colleges en lezingen over bevlogenheid, welzijn, motivatie en betekenisvol werk."
+lang: nl
+url: "https://larsvantuin.github.io"   # later: "https://www.larsvantuin.nl"
+baseurl: "/website"   # weer leeg maken ("") zodra een eigen domein is gekoppeld
+
+exclude:
+  - README.md
+  - LICENSE
+
+# Blogs: zelfde adressen als op de oude WordPress-site (bv. /2022/07/06/stop-met-motiveren/)
+permalink: /:year/:month/:day/:title/
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }

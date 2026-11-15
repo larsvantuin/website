@@ -1,0 +1,60 @@
+# Wetenschappelijke publicaties. Nieuwste bovenaan.
+# 'met' = medeauteurs (mag weg als je alleen auteur bent).
+# Nieuwe publicatie? Kopieer een blok, zet het bovenaan en pas het aan.
+- jaar: 2025
+  titel: "As at home, so at work? The dynamic of relationship quality, work engagement, and burnout"
+  bron: "PLOS ONE"
+  met: "Maria C.W. Peeters, Willem van Rhenen, Iris Arends, Jurriën den Hollander"
+  link: "https://doi.org/10.1371/journal.pone.0335404"
+
+- jaar: 2024
+  titel: "How occupational physicians pay attention to the values of employees: a qualitative study"
+  bron: "International Journal of Qualitative Studies on Health and Well-being"
+  met: "Pepijn R. Hagenaar, Willem van Rhenen, Arjan W. Braam"
+  link: "https://doi.org/10.1080/17482631.2024.2370069"
+
+- jaar: 2024
+  titel: "De wil tot betekenis"
+  bron: "Canon van leren en ontwikkelen (boekhoofdstuk)"
+  met: "Illya Soffer"
+  link: "https://boommanagement.nl/artikel/de-wil-tot-betekenis-1959-viktor-e-frankl-longread/"
+
+- jaar: 2022
+  titel: "Zicht op motivatie: Over leiderschap, ondernemingsdoelen, waarden en psychologische basisbehoeften"
+  bron: "Gedrag & Organisatie"
+  met: "Wilmar B. Schaufeli, Willem van Rhenen"
+  link: "https://doi.org/10.5117/go2022.2.001.tuin"
+
+- jaar: 2022
+  titel: "Op zoek naar betekenis: Leiderschap, organisatiedoelen en individuele betekenisgeving"
+  bron: "Tijdschrift voor Arbeidsvraagstukken"
+  link: "https://doi.org/10.5117/tva2022.1.008.tuin"
+
+- jaar: 2021
+  titel: "Navigating Motivation at Work: About Leadership, Purpose, Values, and Basic Psychological Needs"
+  bron: "Proefschrift, Universiteit Utrecht"
+  link: "https://research-portal.uu.nl/en/publications/navigating-motivation-at-work-about-leadership-purpose-values-and/"
+
+- jaar: 2021
+  titel: "Engaging leadership: Enhancing work engagement through intrinsic values and need satisfaction"
+  bron: "Human Resource Development Quarterly"
+  met: "Wilmar B. Schaufeli, Anja Van den Broeck"
+  link: "https://doi.org/10.1002/hrdq.21430"
+
+- jaar: 2020
+  titel: "A Corporate Purpose as an Antecedent to Employee Motivation and Work Engagement"
+  bron: "Frontiers in Psychology"
+  met: "Wilmar B. Schaufeli, Anja Van den Broeck, Willem van Rhenen"
+  link: "https://doi.org/10.3389/fpsyg.2020.572343"
+
+- jaar: 2020
+  titel: "The Satisfaction and Frustration of Basic Psychological Needs in Engaging Leadership"
+  bron: "Journal of Leadership Studies"
+  met: "Wilmar B. Schaufeli, Willem van Rhenen"
+  link: "https://doi.org/10.1002/jls.21695"
+
+- jaar: 2020
+  titel: "Business Results and Well-Being: An Engaging Leadership Intervention Study"
+  bron: "International Journal of Environmental Research and Public Health"
+  met: "Wilmar B. Schaufeli, Willem van Rhenen, Rebecca M. Kuiper"
+  link: "https://doi.org/10.3390/ijerph17124515"

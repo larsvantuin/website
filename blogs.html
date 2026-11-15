@@ -1,0 +1,16 @@
+---
+layout: default
+title: "Blog"
+permalink: /blogs/
+---
+<section class="section">
+  <div class="wrap narrow">
+    <h1>Blog</h1>
+    <p class="lead">Columns, essays en interviews over motivatie, leiderschap en betekenisvol werk.</p>
+    <ul class="pubs">
+      {% for post in site.posts %}
+      <li class="pub"><span class="pub-jaar">{{ post.date | date: "%Y" }}</span><div><a class="pub-titel" href="{{ post.url | relative_url }}">{{ post.title }}</a></div></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

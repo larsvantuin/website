@@ -1,0 +1,21 @@
+# Algemene gegevens: links, contact en foto's.
+naam: "Dr. Lars van Tuin"
+functie: "Universitair hoofddocent, Nyenrode Business Universiteit · Kennisinstituut Werk en Gezondheid, Arbo Unie"
+
+# Laat 'email' leeg ("") om geen mailadres te tonen.
+email: "larsvantuin@me.com"
+
+links:
+  linkedin: "https://nl.linkedin.com/in/larsvantuin"
+  orcid: "https://orcid.org/0000-0001-6481-2487"
+  scholar: "https://scholar.google.com/citations?hl=nl&user=VU0bnvoAAAAJ"
+  nyenrode: "https://www.nyenrode.nl/faculteit-en-onderzoek/personen/p/dr.-lars-van-tuin"
+  kennisinstituut: "https://www.arbounie.nl/over-ons/kennisinstituut"
+  arbo_academy: "https://arbo-academy.nl/sprekers/dr-lars-van-tuin"
+
+# Zet de foto's in de map assets/img met precies deze bestandsnamen.
+fotos:
+  portret: "portret.webp"
+  portret_credit: "Foto Martina Ketelaar"
+  lezing: "lezing.webp"
+  collegezaal: "collegezaal.webp"

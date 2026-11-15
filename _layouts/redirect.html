@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  {% assign doel = page.redirect_to %}{% assign eerste = doel | slice: 0 %}{% if eerste == "/" %}{% assign doel = page.redirect_to | relative_url %}{% endif %}
+  <title>Doorverwijzing</title>
+  <link rel="canonical" href="{{ doel }}">
+  <meta http-equiv="refresh" content="0; url={{ doel }}">
+  <meta name="robots" content="noindex">
+</head>
+<body><p>Deze pagina is verhuisd: <a href="{{ doel }}">{{ doel }}</a></p></body>
+</html>
