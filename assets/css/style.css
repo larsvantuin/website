@@ -90,3 +90,7 @@ figcaption { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
 .cv { display: grid; grid-template-columns: 4rem 1fr; gap: .35rem 1rem; margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .cv dt { font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
 .cv dd { margin: 0; }
+
+.affil { font-size: .82rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; margin: 0 0 1.1rem; }
+.affil a { display: block; color: var(--accent); text-decoration: none; line-height: 1.6; }
+.affil a:hover { text-decoration: underline; }

@@ -21,12 +21,12 @@
     "@type": "Person",
     "name": "Lars van Tuin",
     "honorificPrefix": "Dr.",
-    "jobTitle": "Universitair hoofddocent",
+    "jobTitle": ["Onderzoeker", "Universitair hoofddocent"],
     "url": "{{ site.url }}{{ '/' | relative_url }}",
     "image": "{{ site.url }}{{ '/assets/img/portret.webp' | relative_url }}",
     "affiliation": [
-      {"@type": "CollegeOrUniversity", "name": "Nyenrode Business Universiteit"},
-      {"@type": "Organization", "name": "Arbo Unie, Kennisinstituut Werk en Gezondheid"}
+      {"@type": "Organization", "name": "Arbo Unie, Kennisinstituut Werk en Gezondheid"},
+      {"@type": "CollegeOrUniversity", "name": "Nyenrode Business Universiteit"}
     ],
     "alumniOf": [
       {"@type": "CollegeOrUniversity", "name": "Universiteit Utrecht"},
@@ -70,8 +70,8 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>© {{ site.time | date: "%Y" }} {{ site.data.profiel.naam }} ·
-        <a href="{{ site.data.profiel.links.linkedin }}">LinkedIn</a> ·
+      <p>© {{ site.time | date: "%Y" }} {{ site.data.profiel.naam }} · Arbo Unie, Kennisinstituut Werk en Gezondheid · Nyenrode Business Universiteit</p>
+      <p><a href="{{ site.data.profiel.links.linkedin }}">LinkedIn</a> ·
         <a href="{{ site.data.profiel.links.orcid }}">ORCID</a> ·
         <a href="{{ site.data.profiel.links.scholar }}">Google Scholar</a></p>
     </div>
