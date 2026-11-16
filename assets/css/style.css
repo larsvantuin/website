@@ -94,3 +94,5 @@ figcaption { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
 .affil { font-size: .82rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; margin: 0 0 1.1rem; }
 .affil a { display: block; color: var(--accent); text-decoration: none; line-height: 1.6; }
 .affil a:hover { text-decoration: underline; }
+
+.motto { font-family: var(--serif); font-style: italic; font-size: 1.35rem; color: var(--accent); margin: 0 0 1.25rem; }
