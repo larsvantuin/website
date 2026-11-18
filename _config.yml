@@ -4,7 +4,7 @@ tagline: "Leiderschap, motivatie en betekenisgeving"
 description: "Onderzoek, colleges en lezingen over bevlogenheid, welzijn, motivatie en betekenisvol werk."
 lang: nl
 url: "https://larsvantuin.nl"   # later: "https://www.larsvantuin.nl"
-baseurl: ""   # weer leeg maken ("") zodra een eigen domein is gekoppeld
+baseurl: "/website"   # weer leeg maken ("") zodra een eigen domein is gekoppeld
 
 exclude:
   - README.md
